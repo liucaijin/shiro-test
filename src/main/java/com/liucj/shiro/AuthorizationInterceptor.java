@@ -2,7 +2,6 @@ package com.liucj.shiro;
 
 import java.io.IOException;
 
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -20,7 +19,7 @@ public class AuthorizationInterceptor extends HandlerInterceptorAdapter{
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
 			throws Exception {
-		int a = 1/0; 
+		 
 		String token = request.getHeader(SystemConstants.TOKEN_HEADER);
 		if(token == null){
 			out(response, 1, "登录失败");

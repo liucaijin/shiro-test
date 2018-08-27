@@ -36,7 +36,7 @@ public class CustomWebMvcConfigurer implements WebMvcConfigurer{
 	
 	@Bean
 	public HttpMessageConverters fastJsonHttpMessageConverters() {
-		ParserConfig.getGlobalInstance().addAccept("com.topband.");
+		ParserConfig.getGlobalInstance().addAccept("com.liucj.");
 
 		SerializeConfig serializeConfig = new SerializeConfig();
 
